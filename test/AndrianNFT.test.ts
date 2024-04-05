@@ -1,6 +1,5 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
-import { AndrianNFT } from "../typechain-types";
 const {
   loadFixture,
 } = require("@nomicfoundation/hardhat-toolbox/network-helpers");
@@ -8,7 +7,7 @@ const {
 describe("AndrianNFT", function () {
   async function deployTokenFixture() {
     const [recipient] = await ethers.getSigners();
-    const token: AndrianNFT = await ethers.deployContract("AndrianNFT");
+    const token = await ethers.deployContract("AndrianNFT");
 
     await token.waitForDeployment();
 

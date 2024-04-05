@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/api/app.js",
-    "build": "tsc",
-    "test": "npx hardhat test",
-    "compile": "npx hardhat compile"
+    "build": "npx hardhat compile && tsc",
+    "test": "npx hardhat test"
   },
   "author": "@mirnax3",
   "license": "ISC",
@@ -25,6 +24,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1"
   }
 }
