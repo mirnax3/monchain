@@ -6,9 +6,6 @@ artifacts/
 cache/
 coverage/
 
-# TypeChain generated types
-typechain/
-
 # Environment files
 .env
 .env.local
