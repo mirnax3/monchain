@@ -2,7 +2,7 @@ import { MonFrog } from 'components/MonFrog/MonFrog';
 import { Web3Page } from 'components/Web3Page';
 import { NextPage } from 'next';
 
-export const AndrianPage: NextPage = () => {
+export const MonchainPage: NextPage = () => {
   return (
     <Web3Page>
       <MonFrog />
@@ -10,4 +10,4 @@ export const AndrianPage: NextPage = () => {
   );
 };
 
-export default AndrianPage;
+export default MonchainPage;
