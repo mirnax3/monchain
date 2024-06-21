@@ -23,7 +23,7 @@ import type {
   TypedContractMethod,
 } from "../common";
 
-export interface AndrianNFTInterface extends Interface {
+export interface MonchainNFTInterface extends Interface {
   getFunction(
     nameOrSignature:
       | "approve"
@@ -239,11 +239,11 @@ export namespace TransferEvent {
   export type LogDescription = TypedLogDescription<Event>;
 }
 
-export interface AndrianNFT extends BaseContract {
-  connect(runner?: ContractRunner | null): AndrianNFT;
+export interface MonchainNFT extends BaseContract {
+  connect(runner?: ContractRunner | null): MonchainNFT;
   waitForDeployment(): Promise<this>;
 
-  interface: AndrianNFTInterface;
+  interface: MonchainNFTInterface;
 
   queryFilter<TCEvent extends TypedContractEvent>(
     event: TCEvent,

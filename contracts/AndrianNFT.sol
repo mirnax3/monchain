@@ -3,11 +3,11 @@ pragma solidity ^0.8.24;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
-contract AndrianNFT is ERC721URIStorage {
+contract MonchainNFT is ERC721URIStorage {
     uint256 private _nextTokenId;
     event NFTMinted(uint256 indexed tokenId, address recipient);
 
-    constructor() ERC721("AndrianNFT", "AND") {
+    constructor() ERC721("MonchainNFT", "AND") {
         _nextTokenId = 1;
     }
 

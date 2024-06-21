@@ -32,5 +32,5 @@ export type { Math } from "./@openzeppelin/contracts/utils/math/Math";
 export { Math__factory } from "./factories/@openzeppelin/contracts/utils/math/Math__factory";
 export type { Strings } from "./@openzeppelin/contracts/utils/Strings";
 export { Strings__factory } from "./factories/@openzeppelin/contracts/utils/Strings__factory";
-export type { AndrianNFT } from "./contracts/AndrianNFT";
-export { AndrianNFT__factory } from "./factories/contracts/AndrianNFT__factory";
+export type { MonchainNFT } from "./contracts/MonchainNFT";
+export { MonchainNFT__factory } from "./factories/contracts/MonchainNFT__factory";

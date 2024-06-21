@@ -4,10 +4,10 @@ const {
   loadFixture,
 } = require("@nomicfoundation/hardhat-toolbox/network-helpers");
 
-describe("AndrianNFT", function () {
+describe("MonchainNFT", function () {
   async function deployTokenFixture() {
     const [recipient] = await ethers.getSigners();
-    const token = await ethers.deployContract("AndrianNFT");
+    const token = await ethers.deployContract("MonchainNFT");
 
     await token.waitForDeployment();
 
@@ -18,7 +18,7 @@ describe("AndrianNFT", function () {
     it("Should set the right contract name and symbol", async function () {
       const { token } = await loadFixture(deployTokenFixture);
 
-      expect(await token.name()).to.equal("AndrianNFT");
+      expect(await token.name()).to.equal("MonchainNFT");
       expect(await token.symbol()).to.equal("AND");
     });
   });

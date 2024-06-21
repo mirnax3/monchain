@@ -66,9 +66,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Strings__factory>;
     getContractFactory(
-      name: "AndrianNFT",
+      name: "MonchainNFT",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.AndrianNFT__factory>;
+    ): Promise<Contracts.MonchainNFT__factory>;
 
     getContractAt(
       name: "IERC1155Errors",
@@ -136,10 +136,10 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Strings>;
     getContractAt(
-      name: "AndrianNFT",
+      name: "MonchainNFT",
       address: string | ethers.Addressable,
       signer?: ethers.Signer
-    ): Promise<Contracts.AndrianNFT>;
+    ): Promise<Contracts.MonchainNFT>;
 
     deployContract(
       name: "IERC1155Errors",
@@ -194,9 +194,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Strings>;
     deployContract(
-      name: "AndrianNFT",
+      name: "MonchainNFT",
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.AndrianNFT>;
+    ): Promise<Contracts.MonchainNFT>;
 
     deployContract(
       name: "IERC1155Errors",
@@ -264,10 +264,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | DeployContractOptions
     ): Promise<Contracts.Strings>;
     deployContract(
-      name: "AndrianNFT",
+      name: "MonchainNFT",
       args: any[],
       signerOrOptions?: ethers.Signer | DeployContractOptions
-    ): Promise<Contracts.AndrianNFT>;
+    ): Promise<Contracts.MonchainNFT>;
 
     // default types
     getContractFactory(

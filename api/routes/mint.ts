@@ -1,12 +1,12 @@
 import { Router, Request, Response } from "express";
 import { body, validationResult } from "express-validator";
-import { AndrianNFT__factory } from "../../typechain-types";
+import { MonchainNFT__factory } from "../../typechain-types";
 
 const router = Router();
 // const contractAddress = "YOUR_CONTRACT_ADDRESS";
 // const provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL);
 
-// const contract = AndrianNFT__factory.connect(contractAddress, signer);
+// const contract = MonchainNFT__factory.connect(contractAddress, signer);
 
 // Add validation middleware before your route handler
 router.post(
